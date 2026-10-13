@@ -1,9 +1,9 @@
 <h1 align="center">Snake Game</h1>
 
 ### Description
-A simple `Snake Game` coded in c++ language and using `GLUT / OpenGL` for displaying. Hurdles of different shapes for the snake and creating an unbeatable high score makes the game interesting. Not just that, the user can also resume the game as well.
+A C++ arcade game rendered with GLUT/OpenGL, featuring progressive snake movement, multiple food types, shaped obstacles, collision handling, resumable sessions, and persistent high scores.
 
-### Manual
+### Build and run
 1) Open the ubuntu terminal in `src` folder and run the following command to install all the `Required Libraries`:
     ```
     bash install-libraries.sh
