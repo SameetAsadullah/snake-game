@@ -3,26 +3,36 @@
 ### Description
 A C++ arcade game rendered with GLUT/OpenGL, featuring progressive snake movement, multiple food types, shaped obstacles, collision handling, resumable sessions, and persistent high scores.
 
+### Repository layout
+
+```text
+data/     Persistent high-score state
+extras/   Gameplay screenshots
+include/  Graphics utility headers
+scripts/  Dependency setup
+src/      Game and rendering sources
+```
+
 ### Build and run
-1) Open the ubuntu terminal in `src` folder and run the following command to install all the `Required Libraries`:
+1. Install the required Ubuntu packages:
     ```
-    bash install-libraries.sh
+    bash scripts/install-dependencies.sh
     ```  
 
-2) Use the following command to `Build the Project`:
+2. Build the game from the repository root:
     ```
     make
     ```
     
-3) Use the following command to `Run the Game`:
+3. Run the game from the repository root so it can access `data/highscore.txt`:
     ```
-    ./game-release
+    make run
     ```
     <div align="center">
       <img src = "https://github.com/SameetAsadullah/snake-game/blob/main/extras/menu-ss.png" alt = "" width="900px"/>
     </div>
     
-4) You can press `Enter` to select any option from the menu. To come back from the highscore menu, you will have to press `Left Arrow Key`. You can use `Arrow Keys` to move the snake:
+4. Press `Enter` to select a menu option. Use the `Left Arrow` to leave the high-score screen and the arrow keys to control the snake:
     <div align="center">
       <img src = "https://github.com/SameetAsadullah/snake-game/blob/main/extras/gameplay-ss.png" alt = "" width="900px"/>
     </div>

@@ -457,7 +457,7 @@ void Display(){
 					{
 						high_score=Tscore;
 	
-						ofstream highscore("highscore.txt" , ios::out);
+						ofstream highscore("data/highscore.txt" , ios::out);
 			
 						highscore<<high_score<<endl;
 		
@@ -1149,7 +1149,7 @@ int main(int argc, char*argv[]) {
 
 	//reads highscore from the txt file
 	ifstream highscore;
-	highscore.open("highscore.txt" , ios::in);
+	highscore.open("data/highscore.txt" , ios::in);
 	highscore>>high_score;
 	highscore.close();
 
